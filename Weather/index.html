@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to weather app</h1>
+            <p>Now you can check your city weather</p>
+
+            
+            <form id="w-form">
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="city" class="form-control" id="city" placeholder="Enter city name...">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="country" class="form-control" id="country" placeholder="Enter country name...">
+                    <small class="form-text text-muted">Please enter first two later of your country</small>
+                </div>
+                <button class="btn btn-primary">Search</button>
+            </form>
+            <!--w-form-->
+        </div> <!--jumbotorn-->
+
+        <div class="row pb-5">
+            <div class="col-md-10 mx-auto">
+                <div class="card">
+                    <img id="u-icon" class="img-thumbnail" src="https://pixabay.com/illustrations/image-business-house-real-estate-3033200/">
+                    <div class="card-header text-center" id="u-name"></div>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item text-center">
+                            
+                            <div id="w-feels" class="text-center"></div>
+                            
+                        </li>
+                        <li class="list-group-item" id="w-temp"></li>
+                        <li class="list-group-item" id="w-pressure"></li>
+                        <li class="list-group-item" id="w-humidity"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="store.js"></script>
+    <script src="weather.js"></script>
+    <script src="ui.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

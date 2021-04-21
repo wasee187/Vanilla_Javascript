@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Player A- sample game</title>
+    <style>
+        .winner{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's Play Game</h1>
+        <h1>
+            <span id="player1score">0</span> to 
+            <span id= "player2score">0</span>
+        </h1>
+        <p>Playing to : <span>5</span></p>
+        <input type="number" id="inputScore">
+        <button class="btn btn-primary" id = "player1Btn">Player1</button>
+        <button class="btn btn-primary" id= "player2Btn">Player2</button>
+        <button class="btn btn-primary" id="resetBtn">Reset</button>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>

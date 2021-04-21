@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Product Catalog</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-light  d-flex" style="background-color: burlywood;">
+            <h1 class="navbar-brand m-auto">Product Catalog</h1>
+            <input type="text" name="filter" class="form-control m-3" id="filter" placeholder="Filter Your Item...">
+        </nav>
+        <div class="card card-body">
+            <ul class="list-group">
+                <li class="list-group collection">
+                    
+                </li>
+                <!-- <li class="list-group-item collection-item">
+                    <strong>Sneakers</strong>-<span class="price">
+                        $20
+                    </span>
+                    <i class="fas fa-trash-alt float-right"></i>
+                </li>
+                <li class="list-group-item collection-item">
+                    <strong>T-shirt</strong>-<span class="price">
+                        $10
+                    </span>
+                    <i class="fas fa-trash-alt float-right"></i> -->
+                </li>
+            </ul>
+            <form>
+                <div class="row mt-4">
+                    <div class="col">
+                        <input type="text" id="name" placeholder="product-name" class="form-control product-name">
+                    </div>
+                    <div class="col">
+                        <input type="text" id = "price" placeholder="product-price" class="form-control product-price">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-3 add-product">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src ="main.js"></script>
+    
+</body>
+</html>

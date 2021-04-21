@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manger</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/5e5998b57b.js" crossorigin="anonymous"></script>
+    <style>
+        .completed-task{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management App</h1>
+        <div class="card">
+            <div class="card-body">
+               <div class="form-group">
+                   <input type="text" placeholder="Type Your Task.." class ="task-title form-control">
+                   <input type="text" id="id" hidden>
+               </div>
+               <button class="btn btn-primary add-Task">Add Task</button> 
+               <button class="btn btn-warning update-task">Update Task</button> 
+               <button class="btn btn-danger delete-task">Delete Task</button> 
+               <button class="btn btn-info back-btn">Back</button> 
+            </div>
+        </div>
+        <h5 class="text-center mt-3">Completed <span class="completed-tasks">0</span> task out of <span class="total-tasks">0</span></h5>
+        <div class="card card-body task-continer">
+        </div>
+    </div>
+
+    
+    <script src="build/bundle.js"></script>
+</body>
+</html>
